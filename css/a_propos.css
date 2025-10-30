@@ -1,0 +1,141 @@
+/* Style général sur toute la page */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #f8f9fa, #e3f2fd);
+  color: #333;
+}
+
+/* Conteneur principal */
+.container {
+  min-height: calc(100vh - 250px); /* prend toute la hauteur sauf footer */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Titre */
+.container h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #0d47a1;
+  animation: slideDown 0.6s ease-out;
+}
+
+/* Présentation */
+.presentation {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin-bottom: 40px;
+  line-height: 1.8;
+  color: #555;
+}
+
+/* Section niveaux */
+.levels h2 {
+  font-size: 1.8rem;
+  color: #1565c0;
+  margin-bottom: 20px;
+}
+
+.levels ul {
+  list-style: none;
+  padding: 0;
+  max-width: 700px;
+  text-align: left;
+}
+
+.levels li {
+  background: #ffffff;
+  margin-bottom: 10px;
+  padding: 12px 18px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+  font-size: 1rem;
+}
+
+.levels li:hover {
+  transform: translateX(10px);
+  background-color: #e3f2fd;
+}
+
+/* Message dynamique */
+.message {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 1.3rem;
+  color: #2e7d32;
+  animation: bounce 2s infinite;
+}
+
+/* Animation */
+@keyframes slideDown {
+  0% { opacity: 0; transform: translateY(-20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .container h1 {
+    font-size: 2rem;
+  }
+
+  .presentation {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  .levels li {
+    font-size: 0.95rem;
+  }
+
+  .message {
+    font-size: 1rem;
+  }
+}
+
+
+
+
+
+/* Section copyright pleine largeur et centrée */
+.copyright_section {
+  width: 100%;
+  color: black;
+  text-align: center;
+  padding: 1px 0;
+  font-size: 0.9rem;
+  position: relative;
+  bottom: 0;
+  left: 0;
+}
+
+.copyright_section p {
+  margin: 0;
+  padding: 0 50px;
+}
+
+.copyright_section a {
+  color: blue; /* jaune vif */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.copyright_section a:hover {
+  text-decoration: underline;
+}
+
+
+
