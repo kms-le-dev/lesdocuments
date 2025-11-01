@@ -486,6 +486,47 @@
 }
 
 @media (max-width: 575px) {
+    .box_man {
+        margin-bottom: 20px;
+        padding: 15px 10px;
+    }
+    
+    .col-md-4 {
+        width: 50% !important;
+        float: left;
+    }
+
+    .cart_main {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .samsung_text {
+        font-size: 16px;
+        line-height: 1.2;
+        margin-bottom: 5px;
+    }
+
+    .rate_text, .rate_text_1 {
+        font-size: 14px;
+        padding: 2px 0;
+    }
+
+    .cart_bt {
+        width: 100%;
+    }
+
+    .cart_bt a {
+        padding: 6px 8px;
+        font-size: 12px;
+        white-space: nowrap;
+    }
+
+    .mobile_text {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    
     #my_slider a.carousel-control-prev {
         position: absolute;
         left: 175px;

@@ -6,6 +6,22 @@ $(function () {
 	
 	"use strict";
 	
+	/* Smooth Scroll
+	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
+	
+	$('a[href*="#"]:not([href="#"])').on('click', function() {
+		if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+			var target = $(this.hash);
+			target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+			if (target.length) {
+				$('html, body').animate({
+					scrollTop: target.offset().top - 60
+				}, 1000, 'easeInOutExpo');
+				return false;
+			}
+		}
+	});
+	
 	/* Preloader
 	-- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- */
 	
@@ -346,8 +362,13 @@ $(function () {
 	$(".fancybox").fancybox({
 		maxWidth: 1200,
 		maxHeight: 600,
+		fitToView: true,
 		width: '70%',
 		height: '70%',
+		autoSize: false,
+		closeClick: false,
+		openEffect: 'none',
+		closeEffect: 'none'
 	});
 	
 	/* Toggle sidebar

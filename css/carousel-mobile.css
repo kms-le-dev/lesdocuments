@@ -1,0 +1,68 @@
+/* Styles responsifs pour le carousel sur mobile */
+@media (max-width: 575px) {
+    .banner_section {
+        padding-bottom: 30px;
+    }
+
+    .border_1 {
+        height: auto;
+        margin-top: 20px;
+        padding: 15px;
+        border: none;
+    }
+
+    .banner_taital {
+        font-size: 32px;
+        padding-top: 20px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+    .image_1 {
+        position: relative;
+        top: 0;
+        width: 100%;
+        max-width: 150px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .image_2 {
+        width: 100%;
+        max-width: 150px;
+        padding-top: 20px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    #my_slider .carousel-inner .row {
+        flex-direction: column;
+    }
+
+    #my_slider .carousel-inner .col-md-4 {
+        width: 100% !important;
+        padding: 10px;
+        text-align: center;
+    }
+
+    #my_slider .carousel-control-prev,
+    #my_slider .carousel-control-next {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+        top: auto;
+        bottom: 10px;
+    }
+
+    #my_slider .carousel-control-prev {
+        left: calc(50% - 40px);
+    }
+
+    #my_slider .carousel-control-next {
+        right: calc(50% - 40px);
+    }
+
+    .carousel-item {
+        padding-bottom: 50px;
+    }
+}
